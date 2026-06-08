@@ -9,6 +9,7 @@ new-page: true
 I know you don't want to read allat, but please do, reading will make everything make sense.
 
 - @infotext: Dynamic Social Democracy (Highly recommended for new players)
+- @trlinfo: What is TRL?
 - @faq: Frequently Asked Questions
 - @paths: What are all the paths?
 - @changelog: Changelog + Future Updates!
@@ -34,6 +35,14 @@ By March 1930, all of the factors above were no longer in play, the line between
 Your primary goal is to save German <span style="color: #000000;">dem</span><span style="color: #DD0000;">ocr</span><span style="color: #FFCC00;">acy</span>, saving <span style="color: #c00000;">Social Democracy</span> is secondary.
 
 - @flavors: Back
+
+@trlinfo
+
+TRL is the shortname for The Red Left, a leftist unitu subreddit and discord.
+
+This mod is a fork of dynamic that replaces the leaders, advisors and other people with members of TRL and community jokes.
+
+Please kill me for making this mod, love Fin55
 
 @faq
 
