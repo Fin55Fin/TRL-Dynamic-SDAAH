@@ -1,8 +1,8 @@
 title: Green Rosaura
 is-pinned-card: true
 tags: advisor, reformist
-card-image: img/portraits/BaadeFritz.jpg
-view-if: baade_advisor = 1
+card-image: img/portraits/rosaura.jpg
+view-if: rosaura_advisor = 1
 new-page: true 
 
 = <span style="color: #07b308;">Green Rosaura</span>
