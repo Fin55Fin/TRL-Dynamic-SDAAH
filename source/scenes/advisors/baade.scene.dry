@@ -1,13 +1,13 @@
-title: Fritz Baade
+title: <span style="color: #07b308;">Green Rosaura</span>
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/BaadeFritz.jpg
 view-if: baade_advisor = 1
 new-page: true 
 
-= Fritz Baade
+= <span style="color: #07b308;">Green Rosaura</span>
 
-Baade is one of the few agricultural experts in the <span style="color: #c00000;">**SPD**</span>, and an unorthodox economist. [? if land_reform > 0: He currently has considerable support among party factions due to the <span style="color: #c00000;">SPD</span> successfully enacting land reform. ?]
+<span style="color: #07b308;">Green Rosaura</span> is one of the few agricultural experts in the <span style="color: #c00000;">**SPD**</span>, and an unorthodox economist. [? if land_reform > 0: She currently has considerable support among party factions due to the <span style="color: #c00000;">SPD</span> successfully enacting land reform. ?]
 
 - @agriculture
 - @rural_campaign
@@ -16,7 +16,7 @@ Baade is one of the few agricultural experts in the <span style="color: #c00000;
 
 @agriculture
 title: Agricultural Policy
-subtitle: Baade is the Minister of Agriculture.
+subtitle: <span style="color: #07b308;">Green Rosaura</span> is the Minister of Agriculture.
 choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not in government. ?][? if agriculture_minister_party != "SPD": The <span style="color: #c00000;">SPD</span> does not have the Agriculture Ministry. ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6; last_advisor_action = 1
@@ -39,4 +39,4 @@ choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and black_thursday_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 5; wtb_points += 15
 
-[? if not wtb_concept: Woytinsky, Tarnow, and Baade, has been working together to draft a plan for getting us out of the depression. Baade canvasses in favor of this plan throughout the party. ?][? if wtb_concept: The WTB-plan, named for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Baade canvasses in favor of this plan throughout the party. ?]
+[? if not wtb_concept: Woytinsky, Tarnow, and <span style="color: #07b308;">Green Rosaura</span>, have been working together to draft a plan for getting us out of the depression. <span style="color: #07b308;">Green Rosaura</span> canvasses in favor of this plan throughout the party. ?][? if wtb_concept: The WTB-plan, named for its primary supporters Woytinsky, Tarnow, and <span style="color: #07b308;">Green Rosaura</span>, has been adopted as the unions' plan for getting us out of the depression. <span style="color: #07b308;">Green Rosaura</span> canvasses in favor of this plan throughout the party. ?]
