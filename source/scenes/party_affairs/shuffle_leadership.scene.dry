@@ -91,14 +91,14 @@ go-to: rm_main_menu
 
 Hilferding has been removed as an advisor. The Centrist faction disapproves.
 
-@remove_wels
-title: Remove Wels
-view-if: wels_advisor = 1
+@remove_vainqueur
+title: Remove Vainqueur
+view-if: vainqueur_advisor = 1
 tags: remove_advisor
-on-arrival: wels_advisor = 0; center_dissent += 10; n_advisors -= 1
+on-arrival: vainqueur_advisor = 0; center_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Wels has been removed as an advisor. The Centrist faction disapproves.
+Vainqueur has been removed as an advisor. The Centrist faction disapproves.
 
 @remove_muller
 title: Remove Müller
@@ -401,17 +401,17 @@ go-to: advisor_menu
 
 Rudolf Hilferding is now an advisor.
 
-@add_wels
-title: Otto Wels
-subtitle: Otto Wels is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
+@add_vainqueur
+title: Vainqueur
+subtitle: Vainqueur is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
 is-card: true
-card-image: img/portraits/WelsRudolf.jpg
+card-image: img/portraits/vainqueur.jpg
 tags: center_advisor
-view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: wels_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
+view-if: vainqueur_advisor = 0 and n_advisors < 3 and centrists_resign = 0
+on-arrival: vainqueur_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
 go-to: advisor_menu
 
-Otto Wels is now an advisor.
+Vainqueur is now an advisor.
 
 @add_muller
 title: Hermann Müller
