@@ -110,14 +110,14 @@ go-to: rm_main_menu
 Müller has been removed as an advisor. The Centrist faction disapproves.
 
 
-@remove_breitscheid
-title: Remove Breitscheid
-view-if: breitscheid_advisor = 1
+@remove_rosa
+title: Remove Rosa
+view-if: rosa_advisor = 1
 tags: remove_advisor
-on-arrival: breitscheid_advisor = 0; center_dissent += 10; n_advisors -= 1
+on-arrival: rosa_advisor = 0; center_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Breitscheid has been removed as an advisor. The Centrist faction disapproves.
+Rosa has been removed as an advisor. The Centrist faction disapproves.
 
 # reformists
 
@@ -291,14 +291,14 @@ Wirth has been removed as an advisor. The Neorevisionist faction disapproves.
 
 # tbh I'm not sure if Baade should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
 
-@remove_baade
-title: Remove Baade
-view-if: baade_advisor = 1
+@remove_rosaura
+title: Remove Green Rosaura
+view-if: rosaura_advisor = 1
 tags: remove_advisor
-on-arrival: baade_advisor = 0; n_advisors -= 1
+on-arrival: rosaura_advisor = 0; n_advisors -= 1
 go-to: rm_main_menu
 
-Baade has been removed as an advisor.
+Green Rosaura has been removed as an advisor.
 
 #The Reformist faction disapproves.
 
@@ -425,17 +425,17 @@ go-to: advisor_menu
 
 Hermann Müller is now an advisor.
 
-@add_breitscheid
-title: Rudolf Breitscheid
-subtitle: Rudolf Breitscheid comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+@add_rosa
+title: Rosa
+subtitle: Rosa comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
 is-card: true
-card-image: img/portraits/BreitscheidRudolf.jpg
-view-if: breitscheid_advisor = 0 and n_advisors < 3
-on-arrival: breitscheid_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
+card-image: img/portraits/RosaRudolf.jpg
+view-if: rosa_advisor = 0 and n_advisors < 3
+on-arrival: rosa_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
 go-to: advisor_menu
 tags: center_advisor
 
-Rudolf Breitscheid is now an advisor.
+Rosa is now an advisor.
 
 # reformist
 
@@ -661,16 +661,16 @@ Joseph Wirth is now an advisor.
 # Nonfactional advisors
 
 @add_baade
-title: Fritz Baade
-subtitle: Fritz Baade is one of the few agricultural policy experts in the <span style="color: #c00000;">**SPD**</span>. {!<br><br>!}[? if difficulty < 0 : Actions - Agricultural Policy, Rural Campaigning, Addressing the Economic Crisis ?]
+title: Green Rosaura
+subtitle: Green Rosaura is one of the few agricultural policy experts in the <span style="color: #c00000;">**DRL**</span>. {!<br><br>!}[? if difficulty < 0 : Actions - Agricultural Policy, Rural Campaigning, Addressing the Economic Crisis ?]
 is-card: true
-card-image: img/portraits/BaadeFritz.jpg
-view-if: baade_advisor = 0 and n_advisors < 3
-on-arrival: baade_advisor = 1; n_advisors += 1
+card-image: img/portraits/rosaura.jpg
+view-if: rosaura_advisor = 0 and n_advisors < 3
+on-arrival: rosaura_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-Fritz Baade is now an advisor.
+Green Rosaura is now an advisor.
 
 
 @add_hirschfeld
