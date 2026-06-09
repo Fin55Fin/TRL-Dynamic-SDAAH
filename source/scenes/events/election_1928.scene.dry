@@ -3985,7 +3985,7 @@ on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_mini
 go-to: ministries
 tags: mins_1928
 
-Fritz Baade of the <span style="color: #c00000;">**SPD**</span> has been appointed Agriculture Minister.
+<span style="color: #07b308;">Green Rosaura</span> of the <span style="color: #c00000;">**SPD**</span> has been appointed Agriculture Minister.
 
 @reichswehr
 title: Reichswehr Ministry
