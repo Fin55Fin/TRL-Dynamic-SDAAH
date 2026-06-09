@@ -27,10 +27,10 @@ if (Q.center_strength < 10) {
 
 Q.center_strength *= 0.3; 
 Q.n_advisors_start = Q.n_advisors; 
-if (Q.wels_advisor == 1) Q.n_advisors -= 1; 
+if (Q.vainqueur_advisor == 1) Q.n_advisors -= 1; 
 if (Q.hilferding_advisor == 1) Q.n_advisors -= 1; 
 if (Q.muller_advisor == 1) Q.n_advisors -= 1; 
-Q.wels_advisor = 0; 
+Q.vainqueur_advisor = 0; 
 Q.hilferding_advisor = 0; 
 Q.muller_advisor = 0; 
 Q.centrists_resign = 1; 
