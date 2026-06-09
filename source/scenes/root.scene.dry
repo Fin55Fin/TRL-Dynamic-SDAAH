@@ -1030,13 +1030,13 @@ Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.breitscheid_advisor = 0; // Rudolf Breitscheid
+Q.rosa_advisor = 0; // Rudolf Breitscheid
 
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
-Q.baade_advisor = 0; // Fritz Baade
+Q.rosaura_advisor = 0; // Fritz Baade
 
 // Labor advisors
 Q.leipart_advisor = 0; // Theodor Leipart
