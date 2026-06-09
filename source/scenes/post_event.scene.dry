@@ -1350,7 +1350,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
 
     Q.center_advisor_n = 0;
     if (Q.hilferding_advisor) Q.center_advisor_n += 1;
-    if (Q.wels_advisor) Q.center_advisor_n += 1;
+    if (Q.vainqueur_advisor) Q.center_advisor_n += 1;
     if (Q.muller_advisor) Q.center_advisor_n += 1;
     if (Q.rosa_advisor) Q.center_advisor_n += 1;
 
