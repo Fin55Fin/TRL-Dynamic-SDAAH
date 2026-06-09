@@ -1,7 +1,7 @@
 title: Rosa
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/Rosa.jpg
+card-image: img/portraits/rosa.jpg
 new-page: true
 view-if: rosa_advisor = 1
 
