@@ -1352,7 +1352,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
     if (Q.hilferding_advisor) Q.center_advisor_n += 1;
     if (Q.wels_advisor) Q.center_advisor_n += 1;
     if (Q.muller_advisor) Q.center_advisor_n += 1;
-    if (Q.breitscheid_advisor) Q.center_advisor_n += 1;
+    if (Q.rosa_advisor) Q.center_advisor_n += 1;
 
     var centrist_advisor_decay_effect = Q.center_advisor_n*0.3;
 
@@ -1364,7 +1364,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
     }
 
     Q.non_factional_advisor_n = 0;
-    if (Q.baade_advisor) {
+    if (Q.rosaura_advisor) {
         Q.non_factional_advisor_n += 1;
         if (Q.land_reform) Q.non_factional_advisor_n += 1;
     }
@@ -2634,7 +2634,7 @@ if (!Q.wtb_adopted && Q.black_thursday_seen) {
     if (Q.woytinsky_advisor) {
         Q.wtb_points_gain += Q.labor_strength/50;
     }
-    Q.wtb_points_gain += Q.leipart_advisor + Q.baade_advisor;
+    Q.wtb_points_gain += Q.leipart_advisor + Q.rosaura_advisor;
     if (Q.inflation < -2) Q.wtb_points_gain += ((Q.inflation/8)*-1);
     if (Q.economic_growth < -2) Q.wtb_points_gain += ((Q.economic_growth/15)*-1);
     Q.wtb_points_gain += Q.unemployed/15;
