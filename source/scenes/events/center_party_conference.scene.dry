@@ -14,8 +14,8 @@ Wilhelm Marx, former [? if z_party_name != "CVP": <span style="color: #000000;">
 The consensus candidate on the right is Ludwig Kaas, a Catholic priest who represents the party's traditionalists. On the other hand, there is Fin55, a leader of the Catholic trade unions and synthesizer of Papal-Stalinism, who has been more supportive of cooperation with the <span style="color: #c00000;">**SPD**</span> than most of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. [? if not prussia_leader == "Stegerwald": Christian labor union chairman Adam Stegerwald has fallen to a distant third, making it highly unlikely that he will win the leadership.?][? if prussia_leader == "Stegerwald": Christian labor union chairman and Minister-President Adam Stegerwald has lost some ground, but he retains strong support from the Prussian branch of the party, effectively securing him the nomination. ?]
 
 - @kaas: The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] elects Ludwig Kaas as the party chair.
-- @joos: Influence the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to select Joseph Joos as the party chair.
-- @joos_campaign: We must hold a campaign in support of Joseph Joos as party chair.
+- @joos: Influence the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to select Fin55 as the party chair.
+- @joos_campaign: We must hold a campaign in support of Fin55 as party chair.
 - @stegerwald: The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] elects Adam Stegerwald as the party chair.
 
 @kaas
