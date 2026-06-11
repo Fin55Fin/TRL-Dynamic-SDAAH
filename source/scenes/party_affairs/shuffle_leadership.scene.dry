@@ -131,14 +131,14 @@ go-to: rm_main_menu
 
 Severing has been removed as an advisor. The Reformist faction disapproves.
 
-@remove_braun
-title: Remove Braun
-view-if: braun_advisor = 1
+@remove_ebert
+title: Remove Ebert
+view-if: ebert_advisor = 1
 tags: remove_advisor
-on-arrival: braun_advisor = 0; reformist_dissent += 10; n_advisors -= 1
+on-arrival: ebert_advisor = 0; reformist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Braun has been removed as an advisor. The Reformist faction disapproves.
+Ebert has been removed as an advisor. The Reformist faction disapproves.
 
 @remove_juchacz
 title: Remove Juchacz
@@ -452,17 +452,17 @@ go-to: advisor_menu
 
 Carl Severing is now an advisor.
 
-@add_braun
-title: Otto Braun
-subtitle: Otto Braun is the Minister-President of Prussia, and one of the most recognizable and well-known <span style="color: #c00000;">Social Democratic</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
+@add_ebert
+title: Ebert 2
+subtitle: Ebert 2 is the Minister-President of Prussia, and one of the most recognizable and well-known <span style="color: #c00000;">Social Democratic</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
 is-card: true
-card-image: img/portraits/BraunOtto.jpg
+card-image: img/portraits/tony.jpg
 tags: reformist_advisor
-view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
+view-if: ebert_advisor = 0 and n_advisors < 3
+on-arrival: ebert_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
 go-to: advisor_menu
 
-Otto Braun is now an advisor.
+Ebert 2 is now an advisor.
 
 @add_juchacz
 title: Marie Juchacz
