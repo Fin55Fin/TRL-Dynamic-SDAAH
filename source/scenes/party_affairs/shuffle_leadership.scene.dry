@@ -34,7 +34,7 @@ console.log(Q.advisor_1)
 frequency: 1
 go-to: rm_main_menu
 
-The <span style="color: #c00000;">**SPD**</span> is a diverse and <span class="tooltip-text" title="good mod">dynamic</span> party, but its internal divisions cause factional dissent to gradually increase over time. [? if nsdap_votes >= 20: However, the threat posed by the <span style="color: #7A3C00;">**NSDAP**</span> to the Republic has quieted much of the internal bickering. ?]
+The <span style="color: #c00000;">**SPD**</span> is a diverse and <span class="tooltip-text" title="good mod">dynamic</span> party, but its internal divisions cause factional dissent to gradually increase over time. [? if nsdap_votes >= 20: However, the threat posed by the <span style="color: #7A3C00;">**ACP**</span> to the Republic has quieted much of the internal bickering. ?]
 
 Appointing individual advisors will boost their respective faction’s loyalty and influence, at the cost of increasing resentment among the sidelined factions. 
 
@@ -250,14 +250,14 @@ Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
 # neorevisionists
 
-@remove_mierendorff
-title: Remove Mierendorff
-view-if: mierendorff_advisor = 1
+@remove_maxi
+title: Remove Maxi
+view-if: maxi_advisor = 1
 tags: remove_advisor
-on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 10; n_advisors -= 1
+on-arrival: maxi_advisor = 0; neorevisionist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Mierendorff has been removed as an advisor. The Neorevisionist faction disapproves.
+Maxi has been removed as an advisor. The Neorevisionist faction disapproves.
 
 @remove_leber
 title: Remove Leber
@@ -608,17 +608,17 @@ Wladimir Woytinsky is now an advisor.
 
 # neorevisionist leaders
 
-@add_mierendorff
-title: Carlo Mierendorff
-subtitle: Carlo Mierendorff is one of the youngest members of the Reichstag, and the originator of the "Neo-Revisionist" movement. He is an anti-Nazi strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>, Warning About the <span style="color: #7A3C00;">Nazis</span> ?]
+@add_maxi
+title: Maxi
+subtitle: Maxi is one of the youngest members of the Reichstag, and the originator of the "Neo-Revisionist" movement. They are an anti-ACP strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>, Warning About the <span style="color: #7A3C00;">ACP</span> ?]
 is-card: true
-card-image: img/portraits/MierendorffCarlo.jpg
-view-if: mierendorff_advisor = 0 and n_advisors < 3
-on-arrival: mierendorff_advisor = 1; n_advisors += 1; neorevisionist_strength += 5; neorevisionist_dissent -= 7
+card-image: img/portraits/maxi.jpg
+view-if: maxi_advisor = 0 and n_advisors < 3
+on-arrival: maxi_advisor = 1; n_advisors += 1; neorevisionist_strength += 5; neorevisionist_dissent -= 7
 go-to: advisor_menu
 tags: neorev_advisor
 
-Carlo Mierendorff is now an advisor.
+Maxi is now an advisor.
 
 @add_schumacher
 title: Kurt Schumacher
