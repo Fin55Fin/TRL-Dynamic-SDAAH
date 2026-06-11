@@ -41,7 +41,7 @@ view-if: z_relation < 70 and not prussia_leader == "Bee"
 unavailable-subtitle: [? if z_relation <= 25 : Fin has been so exhausted by the weekly religion debates that he became a monk in the Canadian Rockies. ?] [? if resources < 1 : We are broke. ?]
 subtitle: -1 resource. Fin is likely to be friendlier to us than Kaas.
 on-arrival: resources -= 1; z_leader = "Fin55"; z_ideology = "Left"; catholics_dnvp += 2; catholics_other += 2; catholics_spd += 5; workers_z += 5; z_relation += 4; zentrum_disintegration += 1; dvp_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1
-face-image: img/portraits/Joseph_Joos.jpg
+face-image: img/portraits/JFin55.jpg
 
 With our grassroots connections as well as a professional campaign, we have been able to influence the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] delegates to support Fin55 as the new [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**SPD**</span>, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 
