@@ -1,13 +1,13 @@
-title: Toni Sender
+title: Esoteto
 is-pinned-card: true
 tags: advisor, left
-card-image: img/portraits/SenderToni.jpg
-view-if: sender_advisor = 1
+card-image: img/portraits/esoteto.jpg
+view-if: esoteto_advisor = 1
 new-page: true 
 
-= Toni Sender
+= Esoteto
 
-Toni Sender is an organizer and writer who came from a bourgeois family, but was radicalized into <span style="color: #c00000;">socialism</span> after her experiences in the workforce. She was a member of the anti-war <span style="color: #D47B9B;">**USPD**</span>, but did not support armed revolution.
+Esoteto is an organizer and writer who came from a bourgeois family, but was radicalized into <span style="color: #c00000;">socialism</span> after their experiences in the workforce. They were a member of the anti-war <span style="color: #D47B9B;">**USPD**</span>, but did not support armed revolution.
 
 - @left_unity
 - @organizing_women
@@ -26,12 +26,12 @@ We have reduced dissent among the party's factions.
 
 @organizing_women
 title: Organizing women
-subtitle: Sender's strategies are aimed at young working women.
+subtitle: Esoteto's strategies are aimed at young working women.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: womens_rights += 1; workers_spd += 3*(1-dissent); new_middle_spd += 5*(1-dissent); advisor_action_timer = 6
 
-Sender's message is popular among young women working in the service sector, and we have recruited many white-collar employees.
+Esoteto's message is popular among young women working in the service sector, and we have recruited many white-collar employees.
 
 [? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
@@ -67,7 +67,7 @@ The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][?
 
 @crisis
 title: Addressing the economic crisis
-subtitle: Sender can help support a left-wing economic program.
+subtitle: Esoteto can help support a left-wing economic program.
 choose-if: advisor_action_timer <= 0 and nationalization_adopted == 0 and black_thursday_seen == 1 and nationalization_support <= 5
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if nationalization_adopted > 0 : We have already adopted the Left plan. ?]
 on-arrival: advisor_action_timer = 6;
