@@ -1398,13 +1398,13 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
 
     Q.left_advisor_n = 0;
     if (Q.levi_advisor) Q.left_advisor_n += 1;
-    if (Q.sender_advisor) Q.left_advisor_n += 1;
+    if (Q.esoteto_advisor) Q.left_advisor_n += 1;
     if (Q.rosenfeld_advisor) Q.left_advisor_n += 1;
     if (Q.seydewitz_advisor) Q.left_advisor_n += 1;
 
     Q.reformist_advisor_n = 0;
     if (Q.severing_advisor) Q.reformist_advisor_n += 1;
-    if (Q.braun_advisor) Q.reformist_advisor_n += 1;
+    if (Q.ebert_advisor) Q.reformist_advisor_n += 1;
     if (Q.juchacz_advisor) Q.reformist_advisor_n += 1;
     if (Q.pfulf_advisor) Q.reformist_advisor_n += 1;
 
