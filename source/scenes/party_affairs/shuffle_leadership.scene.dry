@@ -209,14 +209,14 @@ go-to: rm_main_menu
 
 Levi has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_sender
-title: Remove Sender
-view-if: sender_advisor = 1
+@remove_esoteto
+title: Remove Esoteto
+view-if: esoteto_advisor = 1
 tags: remove_advisor
-on-arrival: sender_advisor = 0; left_dissent += 7; n_advisors -= 1
+on-arrival: esoteto_advisor = 0; left_dissent += 7; n_advisors -= 1
 go-to: rm_main_menu
 
-Sender has been removed as an advisor. The Leftist faction disapproves.
+Esoteto has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_rosenfeld
 title: Remove Rosenfeld
@@ -504,17 +504,17 @@ tags: left_advisor
 
 Paul Levi is now an advisor.
 
-@add_sender
-title: Toni Sender
-subtitle: Toni Sender is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, Against Toleration, Addressing the Economic Crisis ?]
+@add_esoteto
+title: Esoteto
+subtitle: Esoteto is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, Against Toleration, Addressing the Economic Crisis ?]
 is-card: true
-card-image: img/portraits/SenderToni.jpg
-view-if: sender_advisor = 0 and n_advisors < 3
-on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5; left_dissent -= 4
+card-image: img/portraits/esoteto.jpg
+view-if: esoteto_advisor = 0 and n_advisors < 3
+on-arrival: esoteto_advisor = 1; n_advisors += 1; left_strength += 5; left_dissent -= 4
 go-to: advisor_menu
 tags: left_advisor
 
-Toni Sender is now an advisor.
+Esoteto is now an advisor.
 
 @add_rosenfeld
 title: Kurt Rosenfeld
